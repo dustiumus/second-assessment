@@ -6,9 +6,9 @@
 */
 
 //CODE HERE
-//function sum(num1, num2){
- // console.log(num1 + num2)
-//}
+function sum(num1, num2){
+ return (num1 + num2)
+}
 
   //sum(5, 10)
 //////////////////PROBLEM 2////////////////////
@@ -20,14 +20,14 @@
 */
 
 //CODE HERE
-//function greaterThanFive(number) {
-//    if (number > 5) {
-//      return 'number is greater than 5!'
- //   }
- //   else { (number < 5)
- //      return 'number is NOT greater than 5!'
- //   }
-//}
+function greaterThanFive(number) {
+   if (number > 5) {
+     return true
+   }
+   else { (number < 5)
+      return false
+   }
+}
 
 //console.log(greaterThanFive(8))
 //console.log(greaterThanFive(4))
@@ -40,9 +40,13 @@
 */
 
 //CODE HERE
-//function findZWords(word) {
-  //if (word )
-
+function findZWords(word) {
+  if (word[0] === 'z' || word[0] === 'Z' ){
+    return 'the name begins with z' 
+  } else {
+    return 'the name does not begin with z'
+  }
+}
 //////////////////PROBLEM 4////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
@@ -52,7 +56,7 @@
 
 //CODE HERE
 function iLove(name, love){
-  console.log(`${name} 'loves' ${love}!`)
+  return (`${name} loves ${love}!`)
 }
 
 console.log(iLove('Dusty', 'trucks'))

@@ -53,18 +53,18 @@ let me = {
 */
 
 //CODE HEre
-class newCars {
-
-  let car1 = {
-    make: make,
-    model: model,
-    year: year
-  }
-  if (year > 2018) {
-    isNew: true;
-  }
-  else (year < 2018) 
-    isNew: false;
-  }
-  carFactory('nissan', 'titan', 2019)
+function carFactory(make, model, year) {
+    let car = {
+      make: make,
+      model: model,
+      year: year
+    }
+    if (year > 2018){
+      car['isNew'] = true
+    }
+    else {
+      car.isNew = false
+    }
+    return car 
+}
 

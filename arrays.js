@@ -4,15 +4,15 @@
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
-//const colorCopy = faveColors.slice(0,);
-//console.log(colorCopy)
+let colorCopy = faveColors.slice();
+console.log(colorCopy)
 
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
 //CODE HERE
-//faveColors.push('purple')
-//console.log(faveColors);
+colorCopy.push('purple')
+// console.log(colorCopy);
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -43,14 +43,14 @@ const middleNums = numbers.slice(1, 4)
 
 
 function bigOrSmall(arr) {
-  let answers = [25, 132, 356, 99];
-  for (let i = 0; i > 100; i++)
+  let answers = [];
+  for (let i = 0; i < 100; i++){
 if (answers[i] >= 100) {
-  console.log('big')
+  answers.push('big')
 }
 else { 
-  console.log('small')
-}
+  answers.push('small')
+}}
 return(answers)
 }
 //answers.bigOrSmall()
